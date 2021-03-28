@@ -31,9 +31,10 @@ class DeepQLearning:
         model.add(Dense(120, activation = relu))
         model.add(Dense(self.action_space, activation = linear))
         model.compile(loss = 'mse', optimizer = Adam(lr = self.learning_rate))
+        return model
 
     def remember(self, state, action, reward, next_state, done_status):
-        self.memory.append((state, action, reward, next_state, done))
+        self.memory.append((state, action, reward, next_state, done_status))
     
     def act(self, state):
         # Exploration-exploitation
@@ -47,11 +48,11 @@ class DeepQLearning:
             return
         
         mini_batch = random.sample(self.memory, self.batch_size)
-        states = np.array(i[0] for i in mini_batch)
-        actions = np.array(i[1] for i in mini_batch)
-        rewards = np.array(i[2] for i in mini_batch)
-        next_states = np.array(i[3] for i in mini_batch)
-        done_status = np.array(i[4] for i in mini_batch)
+        states = np.array([i[0] for i in mini_batch])
+        actions = np.array([i[1] for i in mini_batch])
+        rewards = np.array([i[2] for i in mini_batch])
+        next_states = np.array([i[3] for i in mini_batch])
+        done_status = np.array([i[4] for i in mini_batch])
 
         states = np.squeeze(states) # Remove axes of length one from states
         next_states = np.squeeze(next_states) # Remove axes of length one from next_states
