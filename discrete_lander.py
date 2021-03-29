@@ -66,7 +66,7 @@ class DeepQLearning:
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
 
-def train(episode):
+def train_dqn(episode):
     loss = []
     agent = DeepQLearning(env.action_space.n, env.observation_space.shape[0])
     for ep in range(episode):
@@ -84,20 +84,26 @@ def train(episode):
             state = next_state
             agent.replay()
             if done_status: # Status is true
-                print("Episode: {}/{}, Score: {}".format(ep, episode, score))
+                f = open("log_dqn.txt", "a")
+                f.write("\nEpisode: {}/{}, Score: {}".format(ep, episode, score))
+                f.close()
                 break
         loss.append(score)
         is_solved = np.mean(loss[-100:]) # Average score of last 100 episodes
         if is_solved > 200:
-            print('\nTask Completed.\n')
+            f = open("log_dqn.txt", "a")
+            f.write('\nTask Completed.\n')
+            f.close()
             break
-        print("Average over last 100 episodes: {0:.2f}\n".format(is_solved))
+        f = open("log_dqn.txt", "a")
+        f.write("\nAverage over last 100 episodes: {0:.2f}\n".format(is_solved))
+        f.close()
     return loss
 
 if __name__ == '__main__':
     print(env.observation_space)
     print(env.action_space)
     episodes = 400
-    loss = train(episodes)
+    loss = train_dqn(episodes)
     plt.plot([i + 1 for i in range(0, len(loss), 2)], loss[::2])
     plt.show()
