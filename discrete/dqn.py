@@ -12,6 +12,9 @@ env = gym.make('LunarLander-v2')
 env.seed(0)
 np.random.seed(0)
 
+"""
+    Implementation of Deep Q-Learning Network (DQN).
+"""
 class DeepQLearning:
     def __init__(self, action_space, state_space):
         self.action_space = action_space
