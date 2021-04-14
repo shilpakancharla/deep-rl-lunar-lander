@@ -4,7 +4,7 @@ from collections import deque
 
 class ReplayBuffer(object):
 
-    def __init__(self, buffer_size, random_seed=123):
+    def __init__(self, buffer_size, random_seed = 123):
         """
         The right side of the deque contains the most recent experiences
         """
