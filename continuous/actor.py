@@ -45,7 +45,7 @@ class ActorNetwork(object):
         net = tflearn.layers.normalization.batch_normalization(net)
         net = tflearn.activations.relu(net)
 
-        net = tflearn.fully_connected(net, 200, weights_init = uniform(minval = 0.002, maxval = 0.002))
+        net = tflearn.fully_connected(net, 200, weights_init = uniform(minval = -0.002, maxval = 0.002))
         net = tflearn.layers.normalization.batch_normalization(net)
         net = tflearn.activations.relu(net)
 
