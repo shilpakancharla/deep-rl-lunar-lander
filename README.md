@@ -1,4 +1,4 @@
-# Applications of Reinforcement Learning: Mars Lander Simulation
+# Applications of Reinforcement Learning: Lunar Lander Simulation
 
 ## Reinforcement Learning Algorithms
 1. Deep Q-Learning
