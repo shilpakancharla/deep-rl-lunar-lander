@@ -6,7 +6,6 @@ from collections import deque
 from keras import Sequential
 from keras.layers import Dense
 from keras.optimizers import Adam
-from keras.activations import relu, linear
 
 env = gym.make('LunarLander-v2')
 env.seed(0)
@@ -25,19 +24,19 @@ class DeepQLearning:
         self.epsilon_min = 0.01
         self.learning_rate = 0.001
         self.epsilon_decay = 0.996
-        self.memory = deque(maxlen = 1000000)
+        self.record = deque(maxlen = 1000000)
         self.model = self.build_model()
 
     def build_model(self):
         model = Sequential()
-        model.add(Dense(150, input_dim = self.state_space, activation = relu))
-        model.add(Dense(120, activation = relu))
-        model.add(Dense(self.action_space, activation = linear))
+        model.add(Dense(150, input_dim = self.state_space, activation = 'relu'))
+        model.add(Dense(120, activation = 'relu'))
+        model.add(Dense(self.action_space, activation = 'linear'))
         model.compile(loss = 'mse', optimizer = Adam(lr = self.learning_rate))
         return model
 
     def remember(self, state, action, reward, next_state, done_status):
-        self.memory.append((state, action, reward, next_state, done_status))
+        self.record.append((state, action, reward, next_state, done_status))
     
     def act(self, state):
         # Exploration-exploitation
@@ -47,10 +46,10 @@ class DeepQLearning:
         return np.argmax(act_values[0])
 
     def replay(self):
-        if len(self.memory) < self.batch_size:
+        if len(self.record) < self.batch_size:
             return
         
-        mini_batch = random.sample(self.memory, self.batch_size)
+        mini_batch = random.sample(self.record, self.batch_size)
         states = np.array([i[0] for i in mini_batch])
         actions = np.array([i[1] for i in mini_batch])
         rewards = np.array([i[2] for i in mini_batch])
