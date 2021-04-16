@@ -2,7 +2,6 @@ import gym
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-from collections import deque
 from keras import Sequential
 from keras.layers import Dense
 from keras.optimizers import Adam
@@ -15,8 +14,8 @@ np.random.seed(0)
     Implementation of Deep Q-Learning Network (DQN).
 """
 class DeepQLearning:
-    def __init__(self, action_space, state_space):
-        self.action_space = action_space
+    def __init__(self, action_options, state_space):
+        self.action_options = action_options
         self.state_space = state_space
         self.epsilon = 1.0
         self.gamma = 0.99
@@ -24,24 +23,24 @@ class DeepQLearning:
         self.epsilon_min = 0.01
         self.learning_rate = 0.001
         self.epsilon_decay = 0.996
-        self.record = deque(maxlen = 1000000)
-        self.model = self.build_model()
+        self.record = [None] * 1000000
+        self.model = self.define_agent_model()
 
-    def build_model(self):
+    def define_agent_model(self):
         model = Sequential()
         model.add(Dense(150, input_dim = self.state_space, activation = 'relu'))
         model.add(Dense(120, activation = 'relu'))
-        model.add(Dense(self.action_space, activation = 'linear'))
+        model.add(Dense(self.action_options, activation = 'linear'))
         model.compile(loss = 'mse', optimizer = Adam(lr = self.learning_rate))
         return model
 
-    def remember(self, state, action, reward, next_state, done_status):
+    def keep_record(self, state, action, reward, next_state, done_status):
         self.record.append((state, action, reward, next_state, done_status))
     
     def act(self, state):
         # Exploration-exploitation
         if np.random.rand() <= self.epsilon:
-            return random.randrange(self.action_space)
+            return random.randrange(self.action_options)
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])
 
@@ -70,19 +69,19 @@ class DeepQLearning:
 
 def train_dqn(episode):
     loss = []
-    agent = DeepQLearning(env.action_space.n, env.observation_space.shape[0])
+    agent = DeepQLearning(env.action_options.n, env.observation_space.shape[0])
     for ep in range(episode):
         state = env.reset()
         state = np.reshape(state, (1, 8))
         score = 0
-        max_steps = 3000
+        max_steps = 2000
         for i in range(max_steps):
             action = agent.act(state)
             env.render()
             next_state, reward, done_status, _ = env.step(action)
             score += reward
             next_state = np.reshape(next_state, (1, 8))
-            agent.remember(state, action, reward, next_state, done_status)
+            agent.keep_record(state, action, reward, next_state, done_status)
             state = next_state
             agent.replay()
             if done_status: # Status is true
@@ -94,17 +93,17 @@ def train_dqn(episode):
         is_solved = np.mean(loss[-100:]) # Average score of last 100 episodes
         if is_solved > 200:
             f = open("log_dqn.txt", "a")
-            f.write('\nTask Completed.\n')
+            f.write('\nTask completed.\n')
             f.close()
             break
         f = open("log_dqn.txt", "a")
-        f.write("\nAverage over last 100 episodes: {0:.2f}\n".format(is_solved))
+        f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(is_solved))
         f.close()
     return loss
 
 if __name__ == '__main__':
     print(env.observation_space)
-    print(env.action_space)
+    print(env.action_options)
     episodes = 400
     loss = train_dqn(episodes)
     plt.plot([i + 1 for i in range(0, len(loss), 2)], loss[::2])
