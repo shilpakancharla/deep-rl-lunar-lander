@@ -39,7 +39,7 @@ class DeepQLearning:
         self.gamma = gamma
         self.learning_rate = learning_rate
         self.epsilon_decay = epsilon_decay
-        self.record = [None] * 1000000 # Create a new record for every combination of parameters
+        self.record = list() # Create a new record for every combination of parameters
         self.model = self.define_agent_model()
 
     """
@@ -69,7 +69,10 @@ class DeepQLearning:
         self.record.append((state, action, reward, next_state, terminal_status))
     
     """
+        Choose an action at random and then predict based on the state from the model we have created after training.
         
+        @param state: current state
+        @return action that yields the greatest reward
     """
     def act(self, state):
         # Exploration-exploitation
@@ -152,7 +155,7 @@ def train_dqn(episode):
         plt.savefig("figures/loss/loss_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
 
         # Create a plot for the reward in the trial
-        plt.plot([i + 1 for in range(0, len(reward_record), 2)], reward_record[::2])
+        plt.plot([i + 1 for i in range(0, len(reward_record), 2)], reward_record[::2])
         plt.title("Reward for Epsilon = {}, Gamma = {}, Learning Rate = {}, Epsilon Decay = {}".format(ev, gv, lrv, edv))
         plt.xlabel("Steps")
         plt.ylabel("Reward")
