@@ -6,11 +6,6 @@ from keras import Sequential
 from keras.layers import Dense
 from keras.optimizers import Adam
 
-# Setting and seeding environmental parameters
-env = gym.make('LunarLander-v2')
-env.seed(0)
-np.random.seed(0)
-
 """
     Implementation of Deep Q-Learning Network (DQN).
 """
@@ -107,65 +102,83 @@ class DeepQLearning:
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
 
-def train_dqn(episode):
+"""
+    We can modify the possible hyperparameters we need to search from here to train the network and calculate
+    the rewards and loss values.
+
+    @param episodes: number of episodes we want to conduct
+    @param ev: epsilon value (randomness factor)
+    @param gv: discount factor value
+    @param lrv: learning rate value
+    @param edv: epsilon-decay value
+    @return loss values of the function
+"""
+def train_dqn(episode, ev, gv, lrv, edv):
+    loss = [] # Create new array that will hold the loss value
+    reward_record = [] # Create new array that will hold the rewards earned
+    agent = DeepQLearning(env.action_space.n, env.observation_space.shape[0], ev, gv, lrv, edv) # Define the agent parameters
+    for ep in range(episode):
+        state = env.reset()
+        state = np.reshape(state, (1, 8))
+        score = 0
+        max_steps = 2000
+        for i in range(max_steps):
+            action = agent.act(state)
+            env.render()
+            next_state, reward, terminal_status, _ = env.step(action)
+            score += reward
+            next_state = np.reshape(next_state, (1, 8))
+            agent.keep_record(state, action, reward, next_state, terminal_status)
+            state = next_state
+            agent.replay()
+            if terminal_status: # If we have reach the terminal state
+                f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
+                f.write("\nEpisode: {}/{}, Score: {}".format(ep, episode, score))
+                f.close()
+                break
+        loss.append(score)
+        reward_record.append(reward)
+        last_hundred_avg = np.mean(loss[-100:]) # Average score of last 100 episodes
+        if last_hundred_avg > 200:
+            f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
+            f.write('\nTask completed.\n')
+            f.close()
+            break
+        f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
+        f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(last_hundred_avg))
+        f.close()
+    return loss
+    
+if __name__ == '__main__':
+    # Setting and seeding environmental parameters
+    env = gym.make('LunarLander-v2')
+    env.seed(0)
+    np.random.seed(0)
+
     # Possible hyperparameter values to search from
     epsilon_values = [1.0, 0.5, 0.3, 0.1]
     gamma_values = [1.0, 0.5, 0.3, 0.1]
     learning_rate_values = [0.1, 0.01, 0.001, 0.0001]
-    epsilon_decay_values = [0.900]
+    epsilon_decay_values = [0.999, 0.995, 0.900]
+
     for ev in epsilon_values:
         for gv in gamma_values:
             for lrv in learning_rate_values:
                 for edv in epsilon_decay_values:
-                    loss = [] # Create new array that will hold the loss value
-                    reward_record = [] # Create new array that will hold the rewards earned
-                    agent = DeepQLearning(env.action_space.n, env.observation_space.shape[0], ev, gv, lrv, edv) # Define the agent parameters
-                    for ep in range(episode):
-                        state = env.reset()
-                        state = np.reshape(state, (1, 8))
-                        score = 0
-                        max_steps = 2000
-                        for i in range(max_steps):
-                            action = agent.act(state)
-                            env.render()
-                            next_state, reward, terminal_status, _ = env.step(action)
-                            score += reward
-                            next_state = np.reshape(next_state, (1, 8))
-                            agent.keep_record(state, action, reward, next_state, terminal_status)
-                            state = next_state
-                            agent.replay()
-                            if terminal_status: # If we have reach the terminal state
-                                f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
-                                f.write("\nEpisode: {}/{}, Score: {}".format(ep, episode, score))
-                                f.close()
-                                break
-                        loss.append(score)
-                        reward_record.append(reward)
-                        is_solved = np.mean(loss[-100:]) # Average score of last 100 episodes
-                        if is_solved > 200:
-                            f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
-                            f.write('\nTask completed.\n')
-                            f.close()
-                            break
-                        f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
-                        f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(is_solved))
-                        f.close()
-    
+                    loss, reward_record = train_dqn(400, ev, gv, lrv, edv) # Train for 400 episodes
+
                     # Create a plot for the loss in the trial
                     plt.plot([i + 1 for i in range(0, len(loss), 2)], loss[::2])
-                    plt.title("Loss for Epsilon = {}, Gamma = {}, Learning Rate = {}, Epsilon Decay = {}".format(ev, gv, lrv, edv))
+                    plt.title("Loss: epsilon = {}, gamma = {}, alpha = {}, epsilon-decay = {}".format(ev, gv, lrv, edv))
                     plt.xlabel("Steps")
                     plt.ylabel("Loss")
                     plt.savefig("figures/loss/loss_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
+                    plt.clf() # Clear figure
 
                     # Create a plot for the reward in the trial
                     plt.plot([i + 1 for i in range(0, len(reward_record), 2)], reward_record[::2])
-                    plt.title("Reward for Epsilon = {}, Gamma = {}, Learning Rate = {}, Epsilon Decay = {}".format(ev, gv, lrv, edv))
+                    plt.title("Reward: epsilon = {}, gamma = {}, alpha = {}, epsilon-decay = {}".format(ev, gv, lrv, edv))
                     plt.xlabel("Steps")
                     plt.ylabel("Reward")
-                    plt.savefig("figures/rewards/reward_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
-
-if __name__ == '__main__':
-    print(env.observation_space)
-    print(env.action_space)
-    train_dqn(400)
+                    plt.savefig("figures/reward/reward_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
+                    plt.clf() # Clear figure
