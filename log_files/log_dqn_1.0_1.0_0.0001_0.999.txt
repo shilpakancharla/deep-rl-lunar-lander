@@ -1,0 +1,9 @@
+
+Episode: 0/400, Score: -134.55933309178778
+Average of last 100 episodes: -134.56
+
+Episode: 1/400, Score: -260.6983959494849
+Average of last 100 episodes: -197.63
+
+Episode: 2/400, Score: -470.5183052301203
+Average of last 100 episodes: -288.59

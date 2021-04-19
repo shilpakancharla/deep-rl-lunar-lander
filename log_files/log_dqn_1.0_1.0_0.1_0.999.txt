@@ -1198,3 +1198,6 @@ Average of last 100 episodes: -677.96
 
 Episode: 399/400, Score: -484.1310577073631
 Average of last 100 episodes: -679.14
+
+Episode: 0/400, Score: -131.33261018764756
+Average of last 100 episodes: -131.33

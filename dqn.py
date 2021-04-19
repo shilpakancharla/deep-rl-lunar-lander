@@ -139,15 +139,19 @@ def train_dqn(episode, ev, gv, lrv, edv):
         loss.append(score)
         reward_record.append(reward)
         last_hundred_avg = np.mean(loss[-100:]) # Average score of last 100 episodes
+        # This average would be a good indicator of a decent set of hyperparameters
         if last_hundred_avg > 200:
             f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
             f.write('\nTask completed.\n')
             f.close()
             break
+        # Break if the average becomes very low - not a good set of hyperparameters
+        elif last_hundred_avg < -1000: 
+            break
         f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
         f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(last_hundred_avg))
         f.close()
-    return loss
+    return loss, reward_record
     
 if __name__ == '__main__':
     # Setting and seeding environmental parameters
@@ -158,7 +162,7 @@ if __name__ == '__main__':
     # Possible hyperparameter values to search from
     epsilon_values = [1.0, 0.5, 0.3, 0.1]
     gamma_values = [1.0, 0.5, 0.3, 0.1]
-    learning_rate_values = [0.1, 0.01, 0.001, 0.0001]
+    learning_rate_values = [0.0001]
     epsilon_decay_values = [0.999, 0.995, 0.900]
 
     for ev in epsilon_values:
