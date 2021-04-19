@@ -115,7 +115,6 @@ class DeepQLearning:
 """
 def train_dqn(episode, ev, gv, lrv, edv):
     loss = [] # Create new array that will hold the loss value
-    reward_record = [] # Create new array that will hold the rewards earned
     agent = DeepQLearning(env.action_space.n, env.observation_space.shape[0], ev, gv, lrv, edv) # Define the agent parameters
     for ep in range(episode):
         state = env.reset()
@@ -137,7 +136,6 @@ def train_dqn(episode, ev, gv, lrv, edv):
                 f.close()
                 break
         loss.append(score)
-        reward_record.append(reward)
         last_hundred_avg = np.mean(loss[-100:]) # Average score of last 100 episodes
         # This average would be a good indicator of a decent set of hyperparameters
         if last_hundred_avg > 200:
@@ -146,12 +144,12 @@ def train_dqn(episode, ev, gv, lrv, edv):
             f.close()
             break
         # Break if the average becomes very low - not a good set of hyperparameters
-        elif last_hundred_avg < -1000: 
+        elif last_hundred_avg < -800: 
             break
         f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
         f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(last_hundred_avg))
         f.close()
-    return loss, reward_record
+    return loss
     
 if __name__ == '__main__':
     # Setting and seeding environmental parameters
@@ -163,13 +161,13 @@ if __name__ == '__main__':
     epsilon_values = [1.0, 0.5, 0.3, 0.1]
     gamma_values = [1.0, 0.5, 0.3, 0.1]
     learning_rate_values = [0.0001]
-    epsilon_decay_values = [0.999, 0.995, 0.900]
+    epsilon_decay_values = [0.995, 0.900]
 
     for ev in epsilon_values:
         for gv in gamma_values:
             for lrv in learning_rate_values:
                 for edv in epsilon_decay_values:
-                    loss, reward_record = train_dqn(400, ev, gv, lrv, edv) # Train for 400 episodes
+                    loss = train_dqn(400, ev, gv, lrv, edv) # Train for 400 episodes
 
                     # Create a plot for the loss in the trial
                     plt.plot([i + 1 for i in range(0, len(loss), 2)], loss[::2])
@@ -177,12 +175,4 @@ if __name__ == '__main__':
                     plt.xlabel("Steps")
                     plt.ylabel("Loss")
                     plt.savefig("figures/loss/loss_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
-                    plt.clf() # Clear figure
-
-                    # Create a plot for the reward in the trial
-                    plt.plot([i + 1 for i in range(0, len(reward_record), 2)], reward_record[::2])
-                    plt.title("Reward: epsilon = {}, gamma = {}, alpha = {}, epsilon-decay = {}".format(ev, gv, lrv, edv))
-                    plt.xlabel("Steps")
-                    plt.ylabel("Reward")
-                    plt.savefig("figures/reward/reward_{}_{}_{}_{}.png".format(ev, gv, lrv, edv))
                     plt.clf() # Clear figure

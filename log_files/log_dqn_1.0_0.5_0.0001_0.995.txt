@@ -1,0 +1,729 @@
+
+Episode: 0/400, Score: -238.1710820065673
+Average of last 100 episodes: -238.17
+
+Episode: 1/400, Score: -364.50356070949954
+Average of last 100 episodes: -301.34
+
+Episode: 2/400, Score: -167.63683295614203
+Average of last 100 episodes: -256.77
+
+Episode: 3/400, Score: -820.7204121676464
+Average of last 100 episodes: -397.76
+
+Episode: 4/400, Score: -448.81180119843754
+Average of last 100 episodes: -407.97
+
+Episode: 5/400, Score: -461.54058746341826
+Average of last 100 episodes: -416.90
+
+Episode: 6/400, Score: -393.3482760490374
+Average of last 100 episodes: -413.53
+
+Episode: 7/400, Score: -33.981942689771486
+Average of last 100 episodes: -366.09
+
+Episode: 8/400, Score: -402.9684570486704
+Average of last 100 episodes: -370.19
+
+Episode: 9/400, Score: -218.25490069946693
+Average of last 100 episodes: -354.99
+
+Episode: 10/400, Score: -409.06932040631983
+Average of last 100 episodes: -359.91
+
+Episode: 11/400, Score: -509.8277333812516
+Average of last 100 episodes: -372.40
+
+Episode: 12/400, Score: -140.3975334822576
+Average of last 100 episodes: -354.56
+
+Episode: 13/400, Score: -106.70648702046041
+Average of last 100 episodes: -336.85
+
+Episode: 14/400, Score: -219.34206365740187
+Average of last 100 episodes: -329.02
+
+Episode: 15/400, Score: -293.896480228412
+Average of last 100 episodes: -326.82
+
+Episode: 16/400, Score: -356.3137231504323
+Average of last 100 episodes: -328.56
+
+Episode: 17/400, Score: -134.32392201604787
+Average of last 100 episodes: -317.77
+
+Episode: 18/400, Score: -410.3389662259738
+Average of last 100 episodes: -322.64
+
+Episode: 19/400, Score: -263.1069411466497
+Average of last 100 episodes: -319.66
+
+Episode: 20/400, Score: -336.5963456424039
+Average of last 100 episodes: -320.47
+
+Episode: 21/400, Score: -209.82819884226535
+Average of last 100 episodes: -315.44
+
+Episode: 22/400, Score: -361.1571594285164
+Average of last 100 episodes: -317.43
+
+Episode: 23/400, Score: -403.3793028224879
+Average of last 100 episodes: -321.01
+
+Episode: 24/400, Score: -315.74751664196197
+Average of last 100 episodes: -320.80
+
+Episode: 25/400, Score: -425.71095295132005
+Average of last 100 episodes: -324.83
+
+Episode: 26/400, Score: -450.7034394372427
+Average of last 100 episodes: -329.50
+
+Episode: 27/400, Score: -399.98776270249937
+Average of last 100 episodes: -332.01
+
+Episode: 28/400, Score: -321.96452814241684
+Average of last 100 episodes: -331.67
+
+Episode: 29/400, Score: -300.8984808821255
+Average of last 100 episodes: -330.64
+
+Episode: 30/400, Score: -203.37267575016955
+Average of last 100 episodes: -326.54
+
+Episode: 31/400, Score: -253.2147101251416
+Average of last 100 episodes: -324.24
+
+Episode: 32/400, Score: -381.31242661588703
+Average of last 100 episodes: -325.97
+
+Episode: 33/400, Score: -411.23205615312
+Average of last 100 episodes: -328.48
+
+Episode: 34/400, Score: -395.6039613115958
+Average of last 100 episodes: -330.40
+
+Episode: 35/400, Score: -395.950773716398
+Average of last 100 episodes: -332.22
+
+Episode: 36/400, Score: -352.3849912840416
+Average of last 100 episodes: -332.77
+
+Episode: 37/400, Score: -384.56495925223635
+Average of last 100 episodes: -334.13
+
+Episode: 38/400, Score: -331.466914032595
+Average of last 100 episodes: -334.06
+
+Episode: 39/400, Score: -235.6171309309204
+Average of last 100 episodes: -331.60
+
+Episode: 40/400, Score: -325.14073466527856
+Average of last 100 episodes: -331.44
+
+Episode: 41/400, Score: -367.0661840816732
+Average of last 100 episodes: -332.29
+
+Episode: 42/400, Score: -342.14017760713637
+Average of last 100 episodes: -332.52
+
+Episode: 43/400, Score: -280.8496556813143
+Average of last 100 episodes: -331.34
+
+Episode: 44/400, Score: -338.2734340589379
+Average of last 100 episodes: -331.50
+
+Episode: 45/400, Score: -249.50660586938818
+Average of last 100 episodes: -329.72
+
+Episode: 46/400, Score: -320.9001405771605
+Average of last 100 episodes: -329.53
+
+Episode: 47/400, Score: -349.981554294379
+Average of last 100 episodes: -329.95
+
+Episode: 48/400, Score: -194.74813174473428
+Average of last 100 episodes: -327.20
+
+Episode: 49/400, Score: -361.5791715593996
+Average of last 100 episodes: -327.88
+
+Episode: 50/400, Score: -341.63213854092476
+Average of last 100 episodes: -328.15
+
+Episode: 51/400, Score: -309.55282384851876
+Average of last 100 episodes: -327.79
+
+Episode: 52/400, Score: -201.93001163472542
+Average of last 100 episodes: -325.42
+
+Episode: 53/400, Score: -196.6062681191974
+Average of last 100 episodes: -323.03
+
+Episode: 54/400, Score: -274.56165061248373
+Average of last 100 episodes: -322.15
+
+Episode: 55/400, Score: -229.12914340929964
+Average of last 100 episodes: -320.49
+
+Episode: 56/400, Score: -467.3476942073598
+Average of last 100 episodes: -323.07
+
+Episode: 57/400, Score: -170.43252061792572
+Average of last 100 episodes: -320.44
+
+Episode: 58/400, Score: -81.22658225588214
+Average of last 100 episodes: -316.38
+
+Episode: 59/400, Score: -171.1766170618581
+Average of last 100 episodes: -313.96
+
+Episode: 60/400, Score: -234.3913919093203
+Average of last 100 episodes: -312.66
+
+Episode: 61/400, Score: -343.4130731612111
+Average of last 100 episodes: -313.15
+
+Episode: 62/400, Score: -247.62429881618976
+Average of last 100 episodes: -312.11
+
+Episode: 63/400, Score: -29.59140870676896
+Average of last 100 episodes: -307.70
+
+Episode: 64/400, Score: -267.14465574750284
+Average of last 100 episodes: -307.08
+
+Episode: 65/400, Score: -293.8805868374809
+Average of last 100 episodes: -306.88
+
+Episode: 66/400, Score: -54.053749768783405
+Average of last 100 episodes: -303.10
+
+Episode: 67/400, Score: -207.40276425695407
+Average of last 100 episodes: -301.69
+
+Episode: 68/400, Score: -225.95376379126083
+Average of last 100 episodes: -300.60
+
+Episode: 69/400, Score: -217.01361368765848
+Average of last 100 episodes: -299.40
+
+Episode: 70/400, Score: -210.33653263982373
+Average of last 100 episodes: -298.15
+
+Episode: 71/400, Score: -224.56112466610244
+Average of last 100 episodes: -297.13
+
+Episode: 72/400, Score: -271.77067001632986
+Average of last 100 episodes: -296.78
+
+Episode: 73/400, Score: -234.88433170112356
+Average of last 100 episodes: -295.94
+
+Episode: 74/400, Score: -227.14285052544426
+Average of last 100 episodes: -295.03
+
+Episode: 75/400, Score: -119.66447589609086
+Average of last 100 episodes: -292.72
+
+Episode: 76/400, Score: -235.954709202207
+Average of last 100 episodes: -291.98
+
+Episode: 77/400, Score: -114.247772701232
+Average of last 100 episodes: -289.70
+
+Episode: 78/400, Score: -159.97847669190907
+Average of last 100 episodes: -288.06
+
+Episode: 79/400, Score: -230.84254006398123
+Average of last 100 episodes: -287.34
+
+Episode: 80/400, Score: -62.83997944402401
+Average of last 100 episodes: -284.57
+
+Episode: 81/400, Score: -71.48267045276657
+Average of last 100 episodes: -281.97
+
+Episode: 82/400, Score: -222.2012420623107
+Average of last 100 episodes: -281.25
+
+Episode: 83/400, Score: -74.93397771034473
+Average of last 100 episodes: -278.80
+
+Episode: 84/400, Score: -248.0441966833663
+Average of last 100 episodes: -278.44
+
+Episode: 85/400, Score: -247.768459219826
+Average of last 100 episodes: -278.08
+
+Episode: 86/400, Score: -79.14848078410832
+Average of last 100 episodes: -275.79
+
+Episode: 87/400, Score: 205.32527780026976
+Average of last 100 episodes: -270.33
+
+Episode: 88/400, Score: -257.0569445350335
+Average of last 100 episodes: -270.18
+
+Episode: 89/400, Score: -180.17613599002073
+Average of last 100 episodes: -269.18
+
+Episode: 90/400, Score: -205.18058262251776
+Average of last 100 episodes: -268.47
+
+Episode: 91/400, Score: -45.39126657292421
+Average of last 100 episodes: -266.05
+
+Episode: 92/400, Score: -56.25187152217386
+Average of last 100 episodes: -263.79
+
+Episode: 93/400, Score: -77.38204014473484
+Average of last 100 episodes: -261.81
+
+Episode: 94/400, Score: -40.668837697514135
+Average of last 100 episodes: -259.48
+
+Episode: 95/400, Score: -33.504178766381614
+Average of last 100 episodes: -257.13
+
+Episode: 96/400, Score: -206.29933439502017
+Average of last 100 episodes: -256.60
+
+Episode: 97/400, Score: -284.3529695097043
+Average of last 100 episodes: -256.89
+
+Episode: 98/400, Score: -262.3819123295249
+Average of last 100 episodes: -256.94
+
+Episode: 99/400, Score: -66.12277329133533
+Average of last 100 episodes: -255.03
+
+Episode: 100/400, Score: -285.0731849255043
+Average of last 100 episodes: -255.50
+
+Episode: 101/400, Score: -191.5111156055079
+Average of last 100 episodes: -253.77
+
+Episode: 102/400, Score: -162.85881302801442
+Average of last 100 episodes: -253.73
+
+Episode: 103/400, Score: -227.3551706753542
+Average of last 100 episodes: -247.79
+
+Episode: 104/400, Score: -82.33135080727375
+Average of last 100 episodes: -244.13
+
+Episode: 105/400, Score: -251.05510031981456
+Average of last 100 episodes: -242.02
+
+Episode: 106/400, Score: 146.0444014059323
+Average of last 100 episodes: -236.63
+
+Episode: 107/400, Score: -52.36420319932401
+Average of last 100 episodes: -236.81
+
+Episode: 108/400, Score: -93.97961365044196
+Average of last 100 episodes: -233.72
+
+Episode: 109/400, Score: -191.96894764182326
+Average of last 100 episodes: -233.46
+
+Episode: 110/400, Score: -248.193711547959
+Average of last 100 episodes: -231.85
+
+Episode: 111/400, Score: -163.4929096875148
+Average of last 100 episodes: -228.39
+
+Episode: 112/400, Score: -82.11751602696245
+Average of last 100 episodes: -227.80
+
+Episode: 113/400, Score: 0.2880454614727057
+Average of last 100 episodes: -226.73
+
+Episode: 114/400, Score: -94.24211385431207
+Average of last 100 episodes: -225.48
+
+Episode: 115/400, Score: -66.12728271167576
+Average of last 100 episodes: -223.21
+
+Episode: 116/400, Score: -101.29600665400578
+Average of last 100 episodes: -220.66
+
+Episode: 117/400, Score: -126.34986306373709
+Average of last 100 episodes: -220.58
+
+Episode: 118/400, Score: -262.4344106911691
+Average of last 100 episodes: -219.10
+
+Episode: 119/400, Score: -287.0121547835906
+Average of last 100 episodes: -219.34
+
+Episode: 120/400, Score: 27.665057091343826
+Average of last 100 episodes: -215.69
+
+Episode: 121/400, Score: -100.8226592279062
+Average of last 100 episodes: -214.60
+
+Episode: 122/400, Score: -246.1195253366219
+Average of last 100 episodes: -213.45
+
+Episode: 123/400, Score: 18.811109764039713
+Average of last 100 episodes: -209.23
+
+Episode: 124/400, Score: -111.72389513202772
+Average of last 100 episodes: -207.19
+
+Episode: 125/400, Score: -384.09202123685395
+Average of last 100 episodes: -206.77
+
+Episode: 126/400, Score: -271.10594933997857
+Average of last 100 episodes: -204.98
+
+Episode: 127/400, Score: -279.8032428485771
+Average of last 100 episodes: -203.78
+
+Episode: 128/400, Score: -228.81469491525905
+Average of last 100 episodes: -202.85
+
+Episode: 129/400, Score: -43.746578128086384
+Average of last 100 episodes: -200.27
+
+Episode: 130/400, Score: -285.21373203678786
+Average of last 100 episodes: -201.09
+
+Episode: 131/400, Score: -221.34186842862275
+Average of last 100 episodes: -200.77
+
+Episode: 132/400, Score: -43.60053460099272
+Average of last 100 episodes: -197.40
+
+Episode: 133/400, Score: -161.19543032422496
+Average of last 100 episodes: -194.90
+
+Episode: 134/400, Score: -42.34417693718223
+Average of last 100 episodes: -191.36
+
+Episode: 135/400, Score: -179.12444331735168
+Average of last 100 episodes: -189.20
+
+Episode: 136/400, Score: -22.592064992354764
+Average of last 100 episodes: -185.90
+
+Episode: 137/400, Score: -203.80024496187292
+Average of last 100 episodes: -184.09
+
+Episode: 138/400, Score: -18.503692894776748
+Average of last 100 episodes: -180.96
+
+Episode: 139/400, Score: 185.89106457499014
+Average of last 100 episodes: -176.75
+
+Episode: 140/400, Score: -27.51344404176578
+Average of last 100 episodes: -173.77
+
+Episode: 141/400, Score: -212.461934645103
+Average of last 100 episodes: -172.22
+
+Episode: 142/400, Score: -246.73484598124253
+Average of last 100 episodes: -171.27
+
+Episode: 143/400, Score: -51.29626979266975
+Average of last 100 episodes: -168.97
+
+Episode: 144/400, Score: -35.195601527863914
+Average of last 100 episodes: -165.94
+
+Episode: 145/400, Score: -295.1678656687353
+Average of last 100 episodes: -166.40
+
+Episode: 146/400, Score: -56.850636413521585
+Average of last 100 episodes: -163.76
+
+Episode: 147/400, Score: -247.2695346791139
+Average of last 100 episodes: -162.73
+
+Episode: 148/400, Score: -227.61614999341083
+Average of last 100 episodes: -163.06
+
+Episode: 149/400, Score: -276.84346076915585
+Average of last 100 episodes: -162.21
+
+Episode: 150/400, Score: -115.8177689916721
+Average of last 100 episodes: -159.95
+
+Episode: 151/400, Score: -282.170475413292
+Average of last 100 episodes: -159.68
+
+Episode: 152/400, Score: -303.9132469985826
+Average of last 100 episodes: -160.70
+
+Episode: 153/400, Score: -339.88403318353505
+Average of last 100 episodes: -162.13
+
+Episode: 154/400, Score: -111.38781224695622
+Average of last 100 episodes: -160.50
+
+Episode: 155/400, Score: -163.84225602553323
+Average of last 100 episodes: -159.85
+
+Episode: 156/400, Score: -206.95719408849817
+Average of last 100 episodes: -157.24
+
+Episode: 157/400, Score: -8.37748301497102
+Average of last 100 episodes: -155.62
+
+Episode: 158/400, Score: 170.66055744208242
+Average of last 100 episodes: -153.11
+
+Episode: 159/400, Score: -34.768502807163216
+Average of last 100 episodes: -151.74
+
+Episode: 160/400, Score: -219.92070040885702
+Average of last 100 episodes: -151.60
+
+Episode: 161/400, Score: -42.677952545560785
+Average of last 100 episodes: -148.59
+
+Episode: 162/400, Score: 9.57030264744482
+Average of last 100 episodes: -146.02
+
+Episode: 163/400, Score: -229.00967817067533
+Average of last 100 episodes: -148.01
+
+Episode: 164/400, Score: 266.4058664960167
+Average of last 100 episodes: -142.68
+
+Episode: 165/400, Score: -55.568268199441064
+Average of last 100 episodes: -140.29
+
+Episode: 166/400, Score: -35.45287431721272
+Average of last 100 episodes: -140.11
+
+Episode: 167/400, Score: -233.02076323039284
+Average of last 100 episodes: -140.36
+
+Episode: 168/400, Score: 278.08042400740226
+Average of last 100 episodes: -135.32
+
+Episode: 169/400, Score: -76.15876818798948
+Average of last 100 episodes: -133.91
+
+Episode: 170/400, Score: -272.5001132240768
+Average of last 100 episodes: -134.54
+
+Episode: 171/400, Score: -15.82891345796179
+Average of last 100 episodes: -132.45
+
+Episode: 172/400, Score: -59.64505520728167
+Average of last 100 episodes: -130.33
+
+Episode: 173/400, Score: -1.9751439941626927
+Average of last 100 episodes: -128.00
+
+Episode: 174/400, Score: -77.82988122620651
+Average of last 100 episodes: -126.50
+
+Episode: 175/400, Score: -39.3150861255901
+Average of last 100 episodes: -125.70
+
+Episode: 176/400, Score: 21.168381337074194
+Average of last 100 episodes: -123.13
+
+Episode: 177/400, Score: -57.475076635096855
+Average of last 100 episodes: -122.56
+
+Episode: 178/400, Score: -43.079819156782676
+Average of last 100 episodes: -121.39
+
+Episode: 179/400, Score: -351.38126048078317
+Average of last 100 episodes: -122.60
+
+Episode: 180/400, Score: -191.08610146636798
+Average of last 100 episodes: -123.88
+
+Episode: 181/400, Score: 273.3906943683964
+Average of last 100 episodes: -120.43
+
+Episode: 182/400, Score: -18.136241560738654
+Average of last 100 episodes: -118.39
+
+Episode: 183/400, Score: -222.95974539364198
+Average of last 100 episodes: -119.87
+
+Episode: 184/400, Score: -17.31993017663541
+Average of last 100 episodes: -117.57
+
+Episode: 185/400, Score: 44.167406117295286
+Average of last 100 episodes: -114.65
+
+Episode: 186/400, Score: -62.34275856193658
+Average of last 100 episodes: -114.48
+
+Episode: 187/400, Score: -22.875761538687172
+Average of last 100 episodes: -116.76
+
+Episode: 188/400, Score: -297.18660526877966
+Average of last 100 episodes: -117.16
+
+Episode: 189/400, Score: -79.94189358716847
+Average of last 100 episodes: -116.16
+
+Episode: 190/400, Score: -306.8903825607875
+Average of last 100 episodes: -117.18
+
+Episode: 191/400, Score: -40.85096488284536
+Average of last 100 episodes: -117.13
+
+Episode: 192/400, Score: 39.80305628238608
+Average of last 100 episodes: -116.17
+
+Episode: 193/400, Score: -20.919291319804074
+Average of last 100 episodes: -115.61
+
+Episode: 194/400, Score: -15.176419615515826
+Average of last 100 episodes: -115.35
+
+Episode: 195/400, Score: -237.81269203267783
+Average of last 100 episodes: -117.39
+
+Episode: 196/400, Score: -344.0289010292612
+Average of last 100 episodes: -118.77
+
+Episode: 197/400, Score: 240.65457517139237
+Average of last 100 episodes: -113.52
+
+Episode: 198/400, Score: 175.0663148751721
+Average of last 100 episodes: -109.15
+
+Episode: 199/400, Score: -26.048967382424635
+Average of last 100 episodes: -108.75
+
+Episode: 200/400, Score: -49.248455470656985
+Average of last 100 episodes: -106.39
+
+Episode: 201/400, Score: 219.33685414632595
+Average of last 100 episodes: -102.28
+
+Episode: 202/400, Score: -18.116198209871044
+Average of last 100 episodes: -100.83
+
+Episode: 203/400, Score: -279.4777100234023
+Average of last 100 episodes: -101.35
+
+Episode: 204/400, Score: -217.91548605689107
+Average of last 100 episodes: -102.71
+
+Episode: 205/400, Score: -250.33421871144253
+Average of last 100 episodes: -102.70
+
+Episode: 206/400, Score: -237.80654980037235
+Average of last 100 episodes: -106.54
+
+Episode: 207/400, Score: 26.500626182554953
+Average of last 100 episodes: -105.75
+
+Episode: 208/400, Score: -38.54996959382574
+Average of last 100 episodes: -105.20
+
+Episode: 209/400, Score: -184.94556942749628
+Average of last 100 episodes: -105.13
+
+Episode: 210/400, Score: -221.107012482309
+Average of last 100 episodes: -104.86
+
+Episode: 211/400, Score: -65.31349892580036
+Average of last 100 episodes: -103.87
+
+Episode: 212/400, Score: 232.11340194331106
+Average of last 100 episodes: -100.73
+
+Episode: 213/400, Score: 9.60823829416266
+Average of last 100 episodes: -100.64
+
+Episode: 214/400, Score: 161.59008134683722
+Average of last 100 episodes: -98.08
+
+Episode: 215/400, Score: -187.00672578023392
+Average of last 100 episodes: -99.29
+
+Episode: 216/400, Score: -170.19424065833994
+Average of last 100 episodes: -99.98
+
+Episode: 217/400, Score: -203.02696251977684
+Average of last 100 episodes: -100.74
+
+Episode: 218/400, Score: -257.0777240380272
+Average of last 100 episodes: -100.69
+
+Episode: 219/400, Score: -53.016603045838885
+Average of last 100 episodes: -98.35
+
+Episode: 220/400, Score: 11.713018861908878
+Average of last 100 episodes: -98.51
+
+Episode: 221/400, Score: -225.05430937959815
+Average of last 100 episodes: -99.75
+
+Episode: 222/400, Score: -22.79654773769053
+Average of last 100 episodes: -97.52
+
+Episode: 223/400, Score: -36.24193372012646
+Average of last 100 episodes: -98.07
+
+Episode: 224/400, Score: 227.76205802053198
+Average of last 100 episodes: -94.68
+
+Episode: 225/400, Score: -253.13536590445463
+Average of last 100 episodes: -93.37
+
+Episode: 226/400, Score: -23.622061335141268
+Average of last 100 episodes: -90.89
+
+Episode: 227/400, Score: 186.27749566354993
+Average of last 100 episodes: -86.23
+
+Episode: 228/400, Score: -54.24633193779118
+Average of last 100 episodes: -84.48
+
+Episode: 229/400, Score: -37.54743332997398
+Average of last 100 episodes: -84.42
+
+Episode: 230/400, Score: -13.003296693633416
+Average of last 100 episodes: -81.70
+
+Episode: 231/400, Score: 182.32132280829194
+Average of last 100 episodes: -77.66
+
+Episode: 232/400, Score: -138.58605123850904
+Average of last 100 episodes: -78.61
+
+Episode: 233/400, Score: -5.226506868098198
+Average of last 100 episodes: -77.05
+
+Episode: 234/400, Score: -166.35077724901754
+Average of last 100 episodes: -78.29
+
+Episode: 235/400, Score: 16.633162010507576
+Average of last 100 episodes: -76.34
+
+Episode: 236/400, Score: -233.1090267648305
+Average of last 100 episodes: -78.44
+
+Episode: 237/400, Score: -14.409992062795723
+Average of last 100 episodes: -76.55
+
+Episode: 238/400, Score: -309.4342170984054
+Average of last 100 episodes: -79.46
+
+Episode: 239/400, Score: -126.47831957894154
+Average of last 100 episodes: -82.58
+
+Episode: 240/400, Score: -258.26566841500164
+Average of last 100 episodes: -84.89
+
+Episode: 241/400, Score: 20.543974009593995
+Average of last 100 episodes: -82.56
+
+Episode: 242/400, Score: 283.66884755661
+Average of last 100 episodes: -77.25
