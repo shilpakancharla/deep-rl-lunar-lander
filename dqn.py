@@ -144,7 +144,7 @@ def train_dqn(episode, ev, gv, lrv, edv):
             f.close()
             break
         # Break if the average becomes very low - not a good set of hyperparameters
-        elif last_hundred_avg < -800: 
+        elif last_hundred_avg < -700: 
             break
         f = open("log_files\log_dqn_{}_{}_{}_{}.txt".format(ev, gv, lrv, edv), "a")
         f.write("\nAverage of last 100 episodes: {0:.2f}\n".format(last_hundred_avg))
@@ -159,9 +159,9 @@ if __name__ == '__main__':
 
     # Possible hyperparameter values to search from
     epsilon_values = [1.0, 0.5, 0.3, 0.1]
-    gamma_values = [1.0, 0.5, 0.3, 0.1]
+    gamma_values = [0.3, 0.1]
     learning_rate_values = [0.0001]
-    epsilon_decay_values = [0.995, 0.900]
+    epsilon_decay_values = [0.995]
 
     for ev in epsilon_values:
         for gv in gamma_values:
