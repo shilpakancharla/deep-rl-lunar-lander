@@ -158,9 +158,9 @@ if __name__ == '__main__':
     np.random.seed(0)
 
     # Possible hyperparameter values to search from
-    epsilon_values = [1.0, 0.5, 0.3, 0.1]
-    gamma_values = [0.3, 0.1]
-    learning_rate_values = [0.0001]
+    epsilon_values = [1.0, 0.9]
+    gamma_values = [0.99]
+    learning_rate_values = [0.001]
     epsilon_decay_values = [0.995]
 
     for ev in epsilon_values:
