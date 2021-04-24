@@ -49,6 +49,7 @@ class DeepQLearning:
         model.add(Dense(100, activation = 'relu'))
         model.add(Dense(self.action_space, activation = 'linear'))
         model.compile(loss = 'mse', optimizer = Adam(lr = self.learning_rate))
+        model.summary()
         return model
 
     """
